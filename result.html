@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processed Images</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Processed Images</h1>
+        <div class="image-container">
+            <h2>Original</h2>
+            <img src="{{ url_for('uploaded_file', filename=filename) }}" alt="Original Image">
+        </div>
+        <div class="image-container">
+            <h2>Cartoonified</h2>
+            <img src="{{ url_for('processed_file', filename='cartoon_' + filename) }}" alt="Cartoonified Image">
+        </div>
+        <div class="image-container">
+            <h2>Sketch</h2>
+            <img src="{{ url_for('processed_file', filename='sketch_' + filename) }}" alt="Sketch Image">
+        </div>
+        <a href="/">Upload Another Image</a>
+    </div>
+</body>
+</html>
