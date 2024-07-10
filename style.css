@@ -1,53 +1,175 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('nature-image.jpeg'); /* Add a nature image as background */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .bg-container {
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f0f0f0;
-}
-
-.container {
-    text-align: center;
-    background: #fff;
+  }
+  
+  /* Rest of the code remains the same */
+  
+  .container {
+    background-color: #F7F7F7;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    width: 90%;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+  
+  form {
+    margin-bottom: 30px;
+  }
+  
+  input[type="file"] {
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    background-color: #F9F9F9;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="file"]:focus {
+    border-color: #3498db;
+  }
+  
+  button[type="submit"] {
+    padding: 12px 24px;
+    border: none;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #2980b9;
+  }
+  
+  .showcase {
+    background-color: #F7F7F7;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-    margin-bottom: 20px;
-}
-
-form {
-    margin-bottom: 20px;
-}
-
-input[type="file"] {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+  }
+  
+  .showcase h2 {
     margin-bottom: 10px;
-}
-
-button {
-    padding: 10px 20px;
-    border: none;
-    background-color: #007BFF;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-.image-container {
-    margin-bottom: 20px;
-}
-
-.image-container img {
+    font-size: 22px;
+    color: #333;
+  }
+  
+  .showcase ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .showcase li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #666;
+  }
+  
+  .showcase li i {
+    margin-right: 10px;
+    font-size: 20px;
+    color: #3498db;
+  }
+  
+  .image-container {
+    margin-bottom: 30px;
+    background: #F0F0F0;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  .image-container h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #2e2e2e;
+  }
+  
+  .image-container img {
     max-width: 100%;
     height: auto;
     border: 1px solid #ccc;
-    border-radius: 5px;
-}
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .image-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Add some attractive web design features */
+  .bg-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #00bcd4, #87CEEB);
+    opacity: 0.5;
+    z-index: -1;
+  }
+  
+  .container::after {
+    content: "";
+    position: absolute
+  }
