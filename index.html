@@ -5,14 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Processing App</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <h1>Upload an Image</h1>
-        <form action="/upload" method="post" enctype="multipart/form-data">
-            <input type="file" name="file">
-            <button type="submit">Upload</button>
-        </form>
+    <div class="bg-container">
+        <div class="container">
+            <h1>Upload an Image</h1>
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <input type="file" name="file" accept="image/*">
+                <button type="submit">Upload</button>
+            </form>
+            <div class="showcase">
+                <h2>Image Processing Features</h2>
+                <ul>
+                    <li><i class="fas fa-palette"></i> Cartoonify</li>
+                    <li><i class="fas fa-pencil-alt"></i> Sketch</li>
+                    <li><i class="fas fa-filter"></i> Filter</li>
+                </ul>
+            </div>
+        </div>
     </div>
 </body>
 </html>
