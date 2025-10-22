@@ -10,6 +10,8 @@ Cartoonify: Converts the uploaded image into a cartoon-like image.
 Sketchify: Converts the uploaded image into a pencil sketch.
 View Processed Images: Users can view the original, cartoonified, and sketched versions of the uploaded image.
 
+<img src="https://raw.githubusercontent.com/venkateshmoodu/Image-Processing-Web-App/refs/heads/main/Screenshot%202025-04-29%20115325.png">
+
 #Technology Stack
 Backend: Python (Flask)
 Frontend: HTML, CSS
@@ -40,3 +42,5 @@ http://127.0.0.1:5000/
 
 #Conclusion:
 The Image-Processing-Web-App is a straightforward yet powerful web application that demonstrates the capabilities of combining Python with Flask for backend processing and HTML/CSS for creating an interactive frontend. By utilizing OpenCV, the app provides users with the ability to upload images and apply unique transformations such as cartoonification and sketching. This project serves as an excellent example of integrating different technologies to build a functional and visually appealing web application. Whether you are looking to learn more about web development, image processing, or both, this project offers a solid foundation and can be extended with additional features and improvements.
+
+<img src="https://raw.githubusercontent.com/venkateshmoodu/Image-Processing-Web-App/refs/heads/main/Screenshot%202025-04-29%20115308.png">
